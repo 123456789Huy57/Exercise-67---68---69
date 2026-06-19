@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> CD Catalog</title>
+        <script src="js/mainjs.js"></script>
+        <style>
+            @import url(css/maincss.css);
+        </style>
+    </head>
+    <body>
+        <button onclick="load_cd_collection(dataset_path,bodycd)">Get my CD collection</button>
+        <br><br>
+        <table id="tb1cd" border="1">
+            <thead>
+                <tr>
+                    <th>Artist</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody id="bodycd">
+
+            </tbody>
+        </table>
+        <script>
+            var dataset_path="cd_catalog.xml"
+            var bodycd=document.getElementById("bodycd")
+        </script>
+    </body>
+</html>
